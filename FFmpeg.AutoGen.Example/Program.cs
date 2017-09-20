@@ -112,8 +112,11 @@ namespace FFmpeg.AutoGen.Example
                     if (ffmpeg.avcodec_send_packet(pCodecContext, pPacket) < 0)
                         throw new ApplicationException($@"Error while sending packet {frameNumber}.");
 
-                    if (ffmpeg.avcodec_receive_frame(pCodecContext, pDecodedFrame) < 0)
-                        throw new ApplicationException($@"Error while receiving frame {frameNumber}.");
+                    if(ffmpeg.avcodec_receive_frame(pCodecContext, pDecodedFrame) < 0) {
+                        //throw new ApplicationException($@"Error while receiving frame {frameNumber}.");
+                        Console.WriteLine($@"Error while receiving frame {frameNumber}.");
+                        continue;
+                    }
 
                     Console.WriteLine($@"frame: {frameNumber}");
 

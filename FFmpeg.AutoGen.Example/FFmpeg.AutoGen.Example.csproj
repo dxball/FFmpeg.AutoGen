@@ -109,6 +109,72 @@
       <Name>FFmpeg.AutoGen</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\ffmpeg\bin\x64\avcodec-57.dll">
+      <Link>FFmpeg\x64\avcodec-57.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ffmpeg\bin\x64\avdevice-57.dll">
+      <Link>FFmpeg\x64\avdevice-57.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ffmpeg\bin\x64\avfilter-6.dll">
+      <Link>FFmpeg\x64\avfilter-6.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ffmpeg\bin\x64\avformat-57.dll">
+      <Link>FFmpeg\x64\avformat-57.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ffmpeg\bin\x64\avutil-55.dll">
+      <Link>FFmpeg\x64\avutil-55.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ffmpeg\bin\x64\postproc-54.dll">
+      <Link>FFmpeg\x64\postproc-54.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ffmpeg\bin\x64\swresample-2.dll">
+      <Link>FFmpeg\x64\swresample-2.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ffmpeg\bin\x64\swscale-4.dll">
+      <Link>FFmpeg\x64\swscale-4.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\FFmpeg\bin\x86\avcodec-57.dll">
+      <Link>FFmpeg\x86\avcodec-57.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\FFmpeg\bin\x86\avdevice-57.dll">
+      <Link>FFmpeg\x86\avdevice-57.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\FFmpeg\bin\x86\avfilter-6.dll">
+      <Link>FFmpeg\x86\avfilter-6.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\FFmpeg\bin\x86\avformat-57.dll">
+      <Link>FFmpeg\x86\avformat-57.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\FFmpeg\bin\x86\avutil-55.dll">
+      <Link>FFmpeg\x86\avutil-55.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\FFmpeg\bin\x86\postproc-54.dll">
+      <Link>FFmpeg\x86\postproc-54.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\FFmpeg\bin\x86\swresample-2.dll">
+      <Link>FFmpeg\x86\swresample-2.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\FFmpeg\bin\x86\swscale-4.dll">
+      <Link>FFmpeg\x86\swscale-4.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
