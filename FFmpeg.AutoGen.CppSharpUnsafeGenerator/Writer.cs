@@ -60,7 +60,7 @@ namespace FFmpeg.AutoGen.CppSharpUnsafeGenerator
                 if (array.IsPrimitive) WritePrimitiveFixedArray(array.Name, elementType, size, prefix);
                 else WriteComplexFixedArray(elementType, size, prefix);
 
-                WriteLine($"public static implicit operator {elementType}[]({array.Name} @struct) => @struct.ToArray();");
+                WriteLine($"public static implicit operator {elementType}[]({array.Name} @struct) {{ return @struct.ToArray(); }}");
             }
         }
 
@@ -88,8 +88,8 @@ namespace FFmpeg.AutoGen.CppSharpUnsafeGenerator
             using (BeginBlock())
             {
                 WriteLine($"public IntPtr Pointer;");
-                Write($"public static implicit operator {@delegate.Name}({@delegate.FunctionName} func) => ");
-                Write($"new {@delegate.Name} {{ Pointer = Marshal.GetFunctionPointerForDelegate(func) }};");
+                Write($"public static implicit operator {@delegate.Name}({@delegate.FunctionName} func) {{ return ");
+                Write($"new {@delegate.Name} {{ Pointer = Marshal.GetFunctionPointerForDelegate(func) }}; }}");
                 WriteLine();
             }
         }

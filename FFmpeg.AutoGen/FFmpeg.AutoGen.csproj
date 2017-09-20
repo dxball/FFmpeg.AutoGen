@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FFmpeg.AutoGen</RootNamespace>
     <AssemblyName>FFmpeg.AutoGen</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -95,7 +95,6 @@
   <ItemGroup>
     <None Include="FFmpeg.AutoGen.dll.config">
       <Gettext-ScanForTranslations>False</Gettext-ScanForTranslations>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

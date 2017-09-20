@@ -5,9 +5,9 @@ namespace FFmpeg.AutoGen
 {
     internal class ConstCharPtrMarshaler : ICustomMarshaler
     {
-        public object MarshalNativeToManaged(IntPtr pNativeData) => Marshal.PtrToStringAnsi(pNativeData);
+        public object MarshalNativeToManaged(IntPtr pNativeData) { return Marshal.PtrToStringAnsi(pNativeData); }
 
-        public IntPtr MarshalManagedToNative(object managedObj) => IntPtr.Zero;
+        public IntPtr MarshalManagedToNative(object managedObj) { return IntPtr.Zero; }
 
         public void CleanUpNativeData(IntPtr pNativeData)
         {
@@ -17,10 +17,10 @@ namespace FFmpeg.AutoGen
         {
         }
 
-        public int GetNativeDataSize() => IntPtr.Size;
+        public int GetNativeDataSize() { return IntPtr.Size; }
 
         private static readonly ConstCharPtrMarshaler Instance = new ConstCharPtrMarshaler();
 
-        public static ICustomMarshaler GetInstance(string cookie) => Instance;
+        public static ICustomMarshaler GetInstance(string cookie) { return Instance; }
     }
 }
